@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Back to Topics Button -->
+    <button class="back-button" onclick="location.href='index.html'">Back to Topics</button>
+    
+    <!-- Page Content -->
+    <h1>Creation</h1>
+    <div id="quiz-container">
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options-container">
+                <button class="option" onclick="selectOption(this)"></button>
+                <button class="option" onclick="selectOption(this)"></button>
+                <button class="option" onclick="selectOption(this)"></button>
+            </div>
+            <button id="submit-button" onclick="submitAnswer()" disabled>Submit</button>
+            <p id="feedback"></p>
+            <button id="next-question-button" onclick="displayQuestion()" style="display: none;">Next Question</button>
+        </div>
+    </div>
+    <script src="Topic%20Creation%20Questions.js"></script>
+</body>
+</html>

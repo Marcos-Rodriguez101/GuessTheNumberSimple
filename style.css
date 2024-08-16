@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between buttons */
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Button styles */
+button {
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* Ensure buttons take full width of their grid cell */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.back-button {
+    /*position: absolute;*/
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#options-container {
+    margin-top: 20px;
+    text-align: center;  /* Center the options */
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;  /* Center the options */
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 80%;  /* Control the width of the options */
+}
+
+.option.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#next-question-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
